@@ -25,7 +25,7 @@ trainApp.controller("searchController",function($scope,$http)
         console.log("searched Number")
 
         var reqNumber={
-            method:"get",
+            method:"GET",
             url:"https://api.railwayapi.com/v2/suggest-train/train/A/apikey/k9ef9ek6fi",
 
         };
