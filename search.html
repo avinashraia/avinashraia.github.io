@@ -1,0 +1,160 @@
+<div class="banner">
+
+</div>
+
+<div class="container ">
+
+
+    <div class="row ">
+
+        <div class="col-md-5 jumbotron">
+            <form >
+                <div class="form-group">
+                    <label for="searchNumber">Enter Train Number:</label>
+                    <input id="tags" type="text" placeholder="Search here..." name="searchNumber" ng-model="Train.searchNumber" ng-keypress="complete();" required class="form-control"  placeholder="Train Number">
+                </div>
+
+                <button type="submit" class="btn btn-default" ng-click="searchTime()">Submit</button>
+                <button type="reset"  value="clear" class="btn btn-default" ng-click="clear()">Clear</button>
+            </form> 
+
+        </div>
+
+        <div class="col-md-5 jumbotron">
+            <div >
+                <table class="table-hover" ng-repeat="d in day" border="1"  style="float:left;"  > 
+
+                    <tbody>
+                        <tr>
+                            <td>{{d.code}}</td></tr>
+                        <tr> <td>{{d.runs}}</td>
+                        </tr>
+                    </tbody> 
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="customDiv">
+        <label>{{trainNumber}}</label>
+        <label>{{trainName}}</label>
+
+    </div>
+
+    <div class="row jumbotron">
+        <div >
+            <table class="table-condensed"> 
+                <tbody >
+                    <tr ng-repeat="r in route">
+                        <td>{{r.fullname}}</td>
+                        <td>{{r.scharr}}</td>
+                        <td>{{r.schdep}}</td>
+                </tbody>   
+            </table>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="banner">
+
+</div>
+
+
+<div class="container">
+<div >
+
+<h1 class="headtag">Search Bar</h1>
+<div class="button_box2">
+<form class="form-wrapper-2 cf">
+-->
+<!--
+<label style="font-size: 30px">Enter Train Number/Name:</label>
+<input id="tags" type="text" placeholder="Search here..." name="searchNumber" ng-model="Train.searchNumber" ng-change="complete();" required/>
+<button type="submit" ng-click="searchTime()">Search</button>
+</form>
+</div>
+
+
+<div>
+<form>
+<div>
+<label style="font-size: 30px">Enter Train Number/Name:</label>
+<input id="tags" type="text"  class="textbox" name="searchNumber" ng-model="Train.searchNumber" ng-change="complete();">
+</div>
+
+<div>
+<input class="button" type="button" value="search" ng-click="searchTime()">
+<input class="button" type="button" value="clear" ng-click="clear()">
+</div>
+
+</form>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<div class="customDiv">
+<table  ng-repeat="d in day" border="1"  style="float:left;"  > 
+
+<tbody>
+<tr>
+<td>{{d.code}}</td></tr>
+<tr> <td>{{d.runs}}</td>
+</tr>
+</tbody> 
+
+</table>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="customDiv">
+<table  border="1" > 
+<tbody >
+<tr ng-repeat="r in route">
+<td>{{r.fullname}}</td>
+<td>{{r.scharr}}</td>
+<td>{{r.schdep}}</td>
+</tbody>   
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+-->

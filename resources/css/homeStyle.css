@@ -1,0 +1,110 @@
+.homeDiv
+{
+    text-align: center;
+    padding:70px;
+
+}
+
+.homeDiv>p
+{
+    text-align: center;
+    color: black;
+    text-shadow: 4px 4px 6px white;
+    font-size: 32px;
+
+
+}
+.homeDiv>p:hover
+{
+    font-size:30px;
+}
+
+.homeDiv>h1
+{
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 6px grey;
+    font-size: 5em
+}
+
+.homeSpan
+{
+    color: maroon;
+    font-family: fantasy;
+    text-shadow: 4px 4px 6px white;
+}
+
+.service
+{
+    background-image: url(images/);
+    background-size: cover
+}
+.serviceDiv
+{
+    text-align: center;
+    color: yellow;
+    text-shadow: 4px 4px 6px navy;
+    padding: 80px;
+    margin:40px;
+    background-size: cover;
+    box-shadow: 0 40px 80px 0 black, 0 6px 20px 0 black;
+
+}
+
+.serviceCaption
+{
+
+    background-color: black;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 30px;
+    
+}
+
+
+.effect-shine:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+
+.fromLeft {  
+
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    padding: 30px;
+    text-align: center;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+    animation-duration:0.5s;
+    animation-delay: 0.5s
+}
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+

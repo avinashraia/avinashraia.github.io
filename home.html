@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12 homeDiv">
+
+            <p id="greeting"></p>
+            <h1 class="p1 effect-shine">Welcome to <span class="homeSpan">MyWeb</span></h1>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>var myDate = new Date();
+        var hrs = myDate.getHours();
+        var g='gd';
+        if (hrs < 12)
+            g = 'Good Morning';
+        else if (hrs >= 12 && hrs <= 16)
+            g = 'Good Afternoon';
+        else if (hrs >= 17 && hrs <= 24)
+            g = 'Good Evening';
+
+        document.getElementById("greeting").innerHTML ='Hello...'+g;
+    </script>
+
+    <div class="service" >
+
+        <div class="fromLeft">
+            <h3 class="label label-primary serviceCaption">My Services</h3>
+        </div>
+
+        <div class="row fade-in">
+            <a href="#!search">
+                <div style="background-image: url(resources/css/images/Toy-Train.jpg);" class="col-md-5 serviceDiv  effect-shine">
+
+                <h1>Get Your Train Timmings</h1>
+                </div>
+            </a>
+
+            <div style="background-image: url(resources/css/images/10.jpg);" class="col-md-5 x serviceDiv effect-shine">
+
+                <h1>Coming Soon...Please Wait</h1>
+            </div>
+
+        </div>
+
+    </div>
+</div>

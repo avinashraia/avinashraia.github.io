@@ -1,0 +1,88 @@
+@media(mi-width:768px)
+{
+    .navbar-nav {
+        float:none;
+        margin:0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-nav > li {
+        display: inline-block;
+        float:none;
+    }
+}
+
+.navbar-inverse{
+    background-color: black;
+    float: right;  
+
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-size: 18px
+
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: gainsboro;
+    text-shadow: 4px 4px 7px red;
+}
+
+
+.navbar-inverse .navbar-brand {
+    color: maroon;
+    font-family: fantasy;
+    background-color:white;
+    font-size: 34px;
+
+
+}
+
+
+.banner
+{
+    height: 200px;
+    background-image: url(images/gorakhpur-junction%20-%20Copy.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    margin-top: 30px;
+}
+
+
+.myImg {
+    background-image: url(images/avi.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.myText {
+    text-shadow: 4px 4px 7px black;
+    margin: 100px;
+    text-emphasis-style: dot;
+    text-align: center;
+    font-size:45px;
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+
+}
+
+.background
+{
+    background-image: url(images/the-blurred-819385_960_720.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.footer
+{
+    padding: 30px;
+    background-color: #2E2D2D;
+    
+    
+}
