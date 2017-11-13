@@ -1,0 +1,46 @@
+
+.myImg {
+    background-image: url(images/avi.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+   
+    
+}
+
+.myText {
+    text-shadow: 4px 4px 7px black;
+    margin: 100px;
+    text-emphasis-style: dot;
+    text-align: center;
+    font-size:45px;
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+    height: 700px;
+    width: 500px;
+}
+
+.left-side {
+    background-color: whitesmoke;
+    float: none;
+    display: table-cell;
+    border-right: 1px solid black;
+
+}
+
+.right-side {
+    background-color: snow;
+    float: none;
+    display: table-cell;
+    border-left: 1px solid black;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+
